@@ -12,7 +12,7 @@
    <tbody>
       <tr *ngFor="let newSatellites of satellites">
          <td>{{newSatellites.name}}</td>
-         <td [class.warning] = "newSatellites.shouldShowWarning()">{{newSatellites.type}}</td>
+         <td [class.warning] = "satellite.shouldShowWarning()">{{newSatellites.type}}</td>
          <td>{{newSatellites.operational}}</td>
          <td>{{newSatellites.orbitType}}</td>
          <td>{{newSatellites.launchDate}}</td>
